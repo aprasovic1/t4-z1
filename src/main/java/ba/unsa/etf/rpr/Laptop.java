@@ -1,6 +1,7 @@
 package ba.unsa.etf.rpr;
 
 
+
 public class Laptop {
     String brend, model, procesor, grafickaKartica;
     int ram, hdd, ssd;
@@ -80,4 +81,8 @@ public class Laptop {
     public void setVelicinaEkrana(double velicinaEkrana) {
         this.velicinaEkrana = velicinaEkrana;
     }
+
+
+
+
 }

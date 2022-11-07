@@ -1,21 +1,18 @@
 package ba.unsa.etf.rpr;
 
-import java.io.*;
+import java.io.File;
 import java.util.ArrayList;
 
-public class LaptopDaoSerializableFile implements LaptopDao {
+public class LaptopDaoJSONFile  implements LaptopDao{
     File file;
     ArrayList<Laptop> laptopi;
-
     @Override
     public void dodajLaptopUListu(Laptop laptop) {
 
     }
 
     @Override
-    public void dodajLaptopUFile(Laptop laptop) throws FileNotFoundException {
-        FileOutputStream file = new FileOutputStream("listaLaptopa.txt");
-        DataOutputStream izlaz = new DataOutputStream(file);
+    public void dodajLaptopUFile(Laptop laptop) {
 
     }
 
@@ -33,6 +30,4 @@ public class LaptopDaoSerializableFile implements LaptopDao {
     public void vratiPodatkeIzDatoteke() {
 
     }
-
-
 }
